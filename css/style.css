@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', 'Arial', 'Helvetica', 'sans-serif';
+    /* Uso do Linear Gradients para angulo entre uma linha horizontal */
     background: linear-gradient(-90deg, #8ec5fc,#e0c3fc);
 }
 
@@ -15,7 +16,6 @@ html, body, main {
     box-sizing: border-box;
 }
 
-/* Mobile first */
 main {
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@ main {
 }
 
 .container {
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     background: white;
     display: flex;
@@ -54,7 +54,7 @@ main {
 .to-do-list__task_label {
     text-align: center;
     margin: 20px 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -70,15 +70,15 @@ main {
     letter-spacing: 2px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .container {
-        width: 60%;
+        width: 40%;
     }
 }
 
 @media (max-width: 420px) {
     .container {
-        width: 70%;
+        width: 50%;
     }
 }
 
