@@ -68,6 +68,7 @@ main {
     font-size: 0.8rem;
     padding: 10px;
     letter-spacing: 2px;
+    border: 1px solid #ccc;
 }
 .to-do-list__timeline {
     width: 100%;
@@ -97,6 +98,24 @@ main {
     cursor: pointer;
     padding: 0;
 }
+.to-do-list_buttons {
+    background-color: #ba7af8;
+    border: none;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: 1px solid #ccc;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media (max-width: 800px) {
     .container {
