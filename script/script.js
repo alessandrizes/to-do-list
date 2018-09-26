@@ -24,19 +24,19 @@ button.addEventListener("click", function (event) {
 
     newTask.appendChild(task);
     newTask.appendChild(remove);
-    timeline.appendChild(newTask);    
+    timeline.appendChild(newTask);
 
     inputText.value = "";
 
-    task.addEventListener("click", function(event) {
+    task.addEventListener("click", function (event) {
         event.preventDefault();
         if (this.classList.contains("to-do-list__new-task_name")) {
             this.classList.remove("to-do-list__new-task_name");
             this.classList.add("to-do-list__new-task_hidden");
-          } else {
+        } else {
             this.classList.remove("to-do-list__new-task_hidden");
             this.classList.add("to-do-list__new-task_name");
-          }
+        }
     })
 
     remove.addEventListener("click", function (event) {
@@ -60,3 +60,18 @@ buttons.appendChild(buttonCheck);
 buttons.appendChild(buttonClear);
 
 container.insertBefore(buttons, container.childNodes[container.length]);
+
+buttonCheck.addEventListener("click", function(){
+    const tasks = document.querySelector("p");
+    if (tasks.classList.contains("to-do-list__new-task_name")) {
+        tasks.classList.remove("to-do-list__new-task_name");
+        tasks.classList.add("to-do-list__new-task_hidden");
+    } else {
+        tasks.classList.remove("to-do-list__new-task_hidden");
+        tasks.classList.add("to-do-list__new-task_name");
+    }
+})
+
+// buttonClear.addEventListener("click", function(){
+    
+// })
