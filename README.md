@@ -1,6 +1,6 @@
 # Projeto 2 - To Do List
 
-**O projeto criado com [Hellen Brunelli] (https://github.com/hellenbrunelli)**
+**O projeto criado com [Hellen Brunelli](https://github.com/hellenbrunelli)**
 Criaremos uma **"lista de tarefas"** para organizar e priorizar tarefas.
 Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e lógica.
 
