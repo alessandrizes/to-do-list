@@ -70,9 +70,7 @@ main {
     letter-spacing: 2px;
     border: 1px solid #ccc;
 }
-.to-do-list__timeline {
-    width: 100%;
-}
+
 .to-do-list__new-task {
     width: 100%;
     font-size: 0.9rem;
@@ -115,7 +113,9 @@ main {
     display: flex;
     justify-content: space-between;
 }
-
+.timeline {
+  width: 100%;
+}
 
 @media (max-width: 800px) {
     .container {

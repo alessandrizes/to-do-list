@@ -4,10 +4,10 @@
 Criaremos uma **"lista de tarefas"** para organizar e priorizar tarefas.
 Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e lógica.
 
-- Ele terá 1 página.
+- Ele tem apenas 1 página.
 - Sendo responsiva para os dispositivos: desktop, tablet e celular.
 - Não utilizaremos Jquery ou nenhuma outra biblioteca/framework.
-- O layout que seguiremo foi padronizado.
+- O layout que seguimos foi padronizado.
 
 --------------
 
