@@ -1,6 +1,6 @@
 # Projeto 2 - To Do List
 
-**O projeto criado com @HellenBrunelli**
+**O projeto criado com [Hellen Brunelli] (https://github.com/hellenbrunelli)**
 Criaremos uma **"lista de tarefas"** para organizar e priorizar tarefas.
 Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e lógica.
 
@@ -20,8 +20,8 @@ Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e l�
 - **Fase 2**
     - Incluimos a opção de excluir itens da lista individualmente;
 - **Fase 3**
-    - Marcar todos os itens como feito
-    - Limpar lista, excluir todos os itens da lista
+    - Marcamos todos os itens como feito
+    - Limpamos lista, excluindo todos os itens da lista
 - **Fase 4**	
     - Não permitimos que um item seja adicionado se só tiver espaços e nenhum texto no input
 - **Fase 5**	
