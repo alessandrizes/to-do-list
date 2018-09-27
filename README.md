@@ -11,17 +11,17 @@ Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e l�
 
 --------------
 
-## FASES A SEREM SEGUIDAS
+## FASES SEGUIDAS
 - **Fase 1**
     - Adicionamos itens na lista
-    - Adicionamos a função check neles
-    - Validamos campo de texto para não entrar itens vazios
+    - Adicionamos marcação de tarefa feita 
+    - Validamos o campo de texto para não aceitar inserções vazias
     - Limpamos campo de texto depois que insere o item na lista
 - **Fase 2**
     - Incluimos a opção de excluir itens da lista individualmente;
 - **Fase 3**
-    - Marcamos todos os itens como feito
-    - Limpamos lista, excluindo todos os itens da lista
+    - Incluimos a opção de marcar todos os itens como feitos
+    - Incluimos a opção que limpa a lista, excluindo todos os itens dela
 - **Fase 4**	
     - Não permitimos que um item seja adicionado se só tiver espaços e nenhum texto no input
 - **Fase 5**	
@@ -29,7 +29,7 @@ Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e l�
 
 --------------
 
-## CRONOGRAMA
+## CRONOGRAMA SEGUIDO
 - **25/09:** Inicio do desenvolvimento de projeto, iniciando um repositório no github, para subir alterações ao longo da semana;
 - **26/09:** Desenvolvimento de projeto;
 - **27/09:** Desenvolvimento de projeto;
@@ -43,7 +43,7 @@ Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e l�
 ## RECURSOS
 - Font: Open Sans
 - Cores #e0c3fc, #8ec5fc, #ba7af8
-- Layout: projeto.png
+- [Layout](img/projeto.png)
 
 
 
