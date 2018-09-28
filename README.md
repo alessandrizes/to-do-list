@@ -43,7 +43,7 @@ Como objetivo exercitar os conhecimento adquiridos em HTML, CSS, Javascript e l�
 ## RECURSOS
 - Font: Open Sans
 - Cores #e0c3fc, #8ec5fc, #ba7af8
-- Layout Padrão:
+- Layout Padrão:    
 ![Layout](https://raw.githubusercontent.com/alessouza/projeto02_to-do-list/master/img/layout.png)
 
 
