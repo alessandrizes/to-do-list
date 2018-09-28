@@ -2,6 +2,8 @@ const button = document.querySelector(".to-do-list_button");
 const inputText = document.getElementById("taskInputText");
 const container = document.querySelector(".container");
 const timeline = document.querySelector(".timeline");
+let dragging;// Variável criada para guardar a classe a ser movida
+// O conceito do drag n' drop é pegar um elemento pela classe ou id guardar ela em uma variável e depois colocar esse elemento em outro lugar chamando essa variável
 
 inputText.addEventListener("keypress", function (event) {
   if (event.charCode === 13) {
@@ -11,25 +13,24 @@ inputText.addEventListener("keypress", function (event) {
 
 button.addEventListener("click", add);
 
-let dragging;
-
 function add() {
-  if (inputText.value === null || inputText.value === undefined || inputText.length === 0 || !inputText.value.trim()) {
+  if (!inputText.value.trim()) {
     inputText.focus();
     return false;
   }
 
   const newTask = document.createElement("div");
-  const task = document.createElement("p");
-  const remove = document.createElement("div");
-
   newTask.className = "to-do-list__new-task";
-  task.className = "to-do-list__new-task_name";
-  remove.className = "to-do-list__new-task_remove";
 
+  const task = document.createElement("p");
+  task.className = "to-do-list__new-task_name";
   task.innerHTML = inputText.value;
+
+  const remove = document.createElement("div");
+  remove.className = "to-do-list__new-task_remove";
   remove.innerHTML = `<button class="to-do-list__new-task_remove-button">x</button>`
 
+  // Quebra de linha do texto inserido
   task.style.width = "80%";
   task.style.wordWrap = "break-word";
 
@@ -54,10 +55,16 @@ function add() {
     newTask.remove();
   })
 
+  // Adiciona o atributo que permite a movimentação
   newTask.setAttribute("draggable", true);
 
+  //Seleciona o evento de click, define que o elemento pode ser arrastado (guarda a classe numa variável)
   newTask.addEventListener("dragstart", dragStart);
+
+  //Seleciona a localização do evento de click e direciona para inserção depois do proximo elemento
   newTask.addEventListener('dragover', dragOver);
+
+  // Finaliza o momvimento
   newTask.addEventListener("dragend", dragEnd);
 
   function dragStart(event) {
@@ -65,12 +72,12 @@ function add() {
   }
 
   function dragOver(event) {
-    const location = event.target.closest(".to-do-list__new-task");
+    const location = event.target.closest(".to-do-list__new-task");//
     console.log(dragging);
-    this.parentNode.insertBefore(dragging, location);
+    this.parentNode.insertBefore(dragging, location);// this.parentNode equivale a class timeline
   }
   function dragEnd() {
-    dragging = null;
+    dragging = null;//usamos o dragging = null para dizer que deve parar o movimento
   }
 };
 
